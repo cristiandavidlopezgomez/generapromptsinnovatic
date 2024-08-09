@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Prompts y Creación de Anuncios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🇻🇪🇨🇴Generador de Prompts. Html5, Css3 y Js By Cristian D Lopez G</h1>
+        <p class="version-texto"> <b> VERSION PRUEBA BETA</b> ⚙️🪛💻</p>
+        <p>Hola <span class="Kellys-+"> Kellys</span>, que mas bueno kellys. Este generador lo cree anoche para que lo use hoy jajaja. 😆😅😁 Espero y le guste los colores.</p>
+        <p>Este generador le permite ingresar datos, para que se junten y creen la estructura de un promp eficiente para una IA palabras clave para IA (Analiza, Crea, Tabla, Lista.)</p>
+
+        <form id="promptForm">
+            <label for="adType">Tipo de Anuncio:</label>
+            <input type="text" id="adType" placeholder="Promoción, Venta Directa, etc.">
+
+            <label for="platform">Plataforma de Publicidad:</label>
+            <input type="text" id="platform" placeholder="Facebook, Instagram, etc.">
+
+            <label for="serviceName">Nombre del Servicio:</label>
+            <input type="text" id="serviceName" placeholder="Innovatic, Ecoomerce, etc.">
+
+            <label for="shortDesc">Descripción Corta:</label>
+            <textarea id="shortDesc" placeholder="Breve descripción del servicio"></textarea>
+
+            <label for="benefits">Beneficios Clave (separados por coma):</label>
+            <textarea id="benefits" placeholder="Beneficio 1, Beneficio 2, Beneficio 3"></textarea>
+
+            <label for="features">Características Destacadas (separadas por coma):</label>
+            <textarea id="features" placeholder="Característica 1, Característica 2, Característica 3"></textarea>
+
+            <label for="audience">Público Objetivo:</label>
+            <input type="text" id="audience" placeholder="Hombres y mujeres de 18-58 años, en EE.UU. y Canadá">
+
+            <label for="cta">Llamado a la Acción (CTA):</label>
+            <input type="text" id="cta" placeholder="Haz clic aquí para obtener más información">
+
+            <label for="style">Estilo y Tono:</label>
+            <input type="text" id="style" placeholder="Formal, Informal, etc.">
+
+            <label for="format">Formato del Anuncio:</label>
+            <input type="text" id="format" placeholder="Texto, Imagen, Video, etc.">
+
+            <label for="marketingTechniques">Técnicas de Marketing (separadas por coma):</label>
+            <textarea id="marketingTechniques" placeholder="Técnica 1, Técnica 2, Técnica 3"></textarea>
+
+            <button type="button" onclick="generateContent()">Generar Texto y Instrucciones</button>
+            <button type="button" onclick="copyToClipboard()">Copiar al Portapapeles</button>
+        </form>
+
+        <div class="Complemeto-para-kellys">
+            <p>Kellys tras haber llenado los datos de ingreso, puede dar clic en Generar Texto y Instrucciones y luego la copia al portapapeles y se va a Chat Gpt y listo.
+                cada promp que genere tiene un inicio de instruccion y un final de ella. Usted solo pone el texto segun la campaña. y listo EPA.💥🫵🥳
+            </p>
+        </div>
+
+        <h2>Texto Generado:</h2>
+        <h2>Copiar texto del cuadro.</h2>
+        <textarea id="result" readonly></textarea>
+
+        <h2>Instrucciones para Crear el Anuncio:</h2>
+        <h2>leer instrucciones en caso de.</h2>
+        <textarea id="instructions" readonly></textarea>
+
+        <a href="https://chatgpt.com/" class="visit-btn">Ir a ChatGPT</a>
+    </div>
+    <footer>2024 &copy; Cristian David Lopez Gomez Todos los derechos.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
